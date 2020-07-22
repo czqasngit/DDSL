@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<View flexDirection="row" width="300" height="auto" maxHeight="1000" left="20" top="50" justify="spaceAround" alignItems="stretch" paddingTop="10" paddingBottom="20" paddingLeft="15" paddingRight="15" backgroundColor="#FFCDB2">
+    <View flex="1" height="auto" justify="center" alignItems="center" backgroundColor="#B5838D">
+        <View width="{{W3siTGVmdCI6IHsiTGVmdCI6IHsiU3ViVHlwZSI6ICJJbnQiLCAiVHlwZSI6ICJQcmltYXJ5IiwgIlZhbHVlIjogIjUwIn0sICJPUCI6ICIvIiwgIlJpZ2h0IjogeyJTdWJUeXBlIjogIkludCIsICJUeXBlIjogIlByaW1hcnkiLCAiVmFsdWUiOiAiMiJ9LCAiVHlwZSI6ICJCaW5hcnkifSwgIk9QIjogIisiLCAiUmlnaHQiOiB7IlN1YlR5cGUiOiAiSW50IiwgIlR5cGUiOiAiUHJpbWFyeSIsICJWYWx1ZSI6ICIxMCJ9LCAiVHlwZSI6ICJCaW5hcnkifV0=}}" height="{{W3siTGVmdCI6IHsiTGVmdCI6IHsiU3ViVHlwZSI6ICJJbnQiLCAiVHlwZSI6ICJQcmltYXJ5IiwgIlZhbHVlIjogIjU5In0sICJPUCI6ICIrIiwgIlJpZ2h0IjogeyJMZWZ0IjogeyJTdWJUeXBlIjogIkRvdWJsZSIsICJUeXBlIjogIlByaW1hcnkiLCAiVmFsdWUiOiAiMi41In0sICJPUCI6ICIqIiwgIlJpZ2h0IjogeyJTdWJUeXBlIjogIkludCIsICJUeXBlIjogIlByaW1hcnkiLCAiVmFsdWUiOiAiMiJ9LCAiVHlwZSI6ICJCaW5hcnkifSwgIlR5cGUiOiAiQmluYXJ5In0sICJPUCI6ICItIiwgIlJpZ2h0IjogeyJTdWJUeXBlIjogIkludCIsICJUeXBlIjogIlByaW1hcnkiLCAiVmFsdWUiOiAiMyJ9LCAiVHlwZSI6ICJCaW5hcnkifV0=}}" backgroundColor="#6D6875" borderColor="#e63946" borderWidth="2" shadowColor="#d00000" shadowRadius="15" shadowOpacity="0.5"/>
+    </View>
+    <View flex="2" height="200" backgroundColor="#90B36D" justify="start" alignItems="center">
+        <Label text="for测试: {{W3siS2V5IjogIm5hbWUiLCAiTm9kZSI6IHsiU3ViVHlwZSI6ICJJRCIsICJUeXBlIjogIlByaW1hcnkiLCAiVmFsdWUiOiAiaXRlbSJ9LCAiVHlwZSI6ICJFdmFsIn1d}} - {{W3siS2V5IjogImFnZSIsICJOb2RlIjogeyJTdWJUeXBlIjogIklEIiwgIlR5cGUiOiAiUHJpbWFyeSIsICJWYWx1ZSI6ICJpdGVtIn0sICJUeXBlIjogIkV2YWwifV0=}}" fontSize="20" color="#ffd23f" for="{{eyJBcnJheU5hbWUiOiAiaXRlbXMiLCAiSXRlbUtleSI6ICJpdGVtIiwgIlR5cGUiOiAiRm9yIn0=}}"/>
+        <Label text="测试标题2测试标题2测试标题2" fontSize="20" color="#ef233c" marginTop="10" lineNumber="3" backgroundColor="#00ff00"/>
+    </View>
+</View>
+

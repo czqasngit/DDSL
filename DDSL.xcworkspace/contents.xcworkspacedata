@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:DDSL-Runtime/DDSL-Runtime.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DDSL-Libs/DDSL-Libs.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DDSL-Antlr/DDSL-Antlr.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DDSL-Script/DDSL-Script.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DDSL-Compiler/DDSL-Compiler.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DDSL-Flex/DDSL-Flex.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DDSL-iOS/DDSL-iOS.xcodeproj">
+   </FileRef>
+</Workspace>

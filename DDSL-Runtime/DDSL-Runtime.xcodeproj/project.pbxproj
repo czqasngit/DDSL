@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A05680E324C69371000297B4 /* libDDSL-Runtime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DDF57524C67F1C00DA5FDC /* libDDSL-Runtime.a */; };
+		A056812924C69552000297B4 /* DDSL-Runtime.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF74C24C68CB400DA5FDC /* DDSL-Runtime.h */; };
+		A056812A24C69552000297B4 /* SemaASTNode.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF73324C68CB400DA5FDC /* SemaASTNode.h */; };
+		A056812B24C69552000297B4 /* SemaUnaryASTNode.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF73424C68CB400DA5FDC /* SemaUnaryASTNode.h */; };
+		A056812C24C69552000297B4 /* SemaBinaryASTNode.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF73524C68CB400DA5FDC /* SemaBinaryASTNode.h */; };
+		A056812D24C69552000297B4 /* SemaContextASTNode.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF73624C68CB400DA5FDC /* SemaContextASTNode.h */; };
+		A056812E24C69552000297B4 /* SemaEvalASTNode.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF73724C68CB400DA5FDC /* SemaEvalASTNode.h */; };
+		A056812F24C69552000297B4 /* SemaParenthesisASTNode.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF73924C68CB400DA5FDC /* SemaParenthesisASTNode.h */; };
+		A056813024C69552000297B4 /* SemaPrimaryASTNode.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF73B24C68CB400DA5FDC /* SemaPrimaryASTNode.h */; };
+		A056813124C69552000297B4 /* SemaTernaryASTNode.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF73E24C68CB400DA5FDC /* SemaTernaryASTNode.h */; };
+		A056813224C69552000297B4 /* SemaAssignASTNode.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF73F24C68CB400DA5FDC /* SemaAssignASTNode.h */; };
+		A056813324C69552000297B4 /* SemaFrame.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF72E24C68CB400DA5FDC /* SemaFrame.h */; };
+		A056813424C69552000297B4 /* SemaObject.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF74B24C68CB400DA5FDC /* SemaObject.h */; };
+		A056813524C69552000297B4 /* SemaForStmt.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF74924C68CB400DA5FDC /* SemaForStmt.h */; };
+		A056813624C69552000297B4 /* SemaASTNodeObject.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF74524C68CB400DA5FDC /* SemaASTNodeObject.h */; };
+		A056813724C69552000297B4 /* DDObject.h in Resources */ = {isa = PBXBuildFile; fileRef = A0DDF74724C68CB400DA5FDC /* DDObject.h */; };
+		A0DDF5B024C6805000DA5FDC /* libDDSL-Libs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DDF5AF24C6805000DA5FDC /* libDDSL-Libs.a */; };
+		A0DDF74E24C68CB400DA5FDC /* SemaParenthesisASTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF73024C68CB400DA5FDC /* SemaParenthesisASTNode.cpp */; };
+		A0DDF74F24C68CB400DA5FDC /* SemaContextASTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF73124C68CB400DA5FDC /* SemaContextASTNode.cpp */; };
+		A0DDF75024C68CB400DA5FDC /* SemaBinaryASTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF73224C68CB400DA5FDC /* SemaBinaryASTNode.cpp */; };
+		A0DDF75124C68CB400DA5FDC /* SemaUnaryASTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF73824C68CB400DA5FDC /* SemaUnaryASTNode.cpp */; };
+		A0DDF75224C68CB400DA5FDC /* SemaAssignASTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF73A24C68CB400DA5FDC /* SemaAssignASTNode.cpp */; };
+		A0DDF75324C68CB400DA5FDC /* SemaPrimaryASTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF73C24C68CB400DA5FDC /* SemaPrimaryASTNode.cpp */; };
+		A0DDF75424C68CB400DA5FDC /* SemaEvalASTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF73D24C68CB400DA5FDC /* SemaEvalASTNode.cpp */; };
+		A0DDF75524C68CB400DA5FDC /* SemaASTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF74024C68CB400DA5FDC /* SemaASTNode.cpp */; };
+		A0DDF75624C68CB400DA5FDC /* SemaTernaryASTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF74124C68CB400DA5FDC /* SemaTernaryASTNode.cpp */; };
+		A0DDF75724C68CB400DA5FDC /* SemaObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF74224C68CB400DA5FDC /* SemaObject.cpp */; };
+		A0DDF75824C68CB400DA5FDC /* DDObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF74424C68CB400DA5FDC /* DDObject.cpp */; };
+		A0DDF75924C68CB400DA5FDC /* SemaASTNodeObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF74624C68CB400DA5FDC /* SemaASTNodeObject.cpp */; };
+		A0DDF75A24C68CB400DA5FDC /* SemaForStmt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF74A24C68CB400DA5FDC /* SemaForStmt.cpp */; };
+		A0DDF75B24C68CB400DA5FDC /* SemaFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF74D24C68CB400DA5FDC /* SemaFrame.cpp */; };
+		A0DDF9A224C6918500DA5FDC /* libDDSL-Script.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DDF9A124C6918500DA5FDC /* libDDSL-Script.a */; };
+		A0DDF9A424C6925300DA5FDC /* libDDSL-Antlr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DDF9A324C6925300DA5FDC /* libDDSL-Antlr.a */; };
+		A0DDF9A524C6927400DA5FDC /* DDSL-Runtime.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF74C24C68CB400DA5FDC /* DDSL-Runtime.h */; };
+		A0DDF9A624C6927400DA5FDC /* SemaASTNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF73324C68CB400DA5FDC /* SemaASTNode.h */; };
+		A0DDF9A724C6927400DA5FDC /* SemaUnaryASTNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF73424C68CB400DA5FDC /* SemaUnaryASTNode.h */; };
+		A0DDF9A824C6927400DA5FDC /* SemaBinaryASTNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF73524C68CB400DA5FDC /* SemaBinaryASTNode.h */; };
+		A0DDF9A924C6927400DA5FDC /* SemaContextASTNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF73624C68CB400DA5FDC /* SemaContextASTNode.h */; };
+		A0DDF9AA24C6927400DA5FDC /* SemaEvalASTNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF73724C68CB400DA5FDC /* SemaEvalASTNode.h */; };
+		A0DDF9AB24C6927400DA5FDC /* SemaParenthesisASTNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF73924C68CB400DA5FDC /* SemaParenthesisASTNode.h */; };
+		A0DDF9AC24C6927400DA5FDC /* SemaPrimaryASTNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF73B24C68CB400DA5FDC /* SemaPrimaryASTNode.h */; };
+		A0DDF9AD24C6927400DA5FDC /* SemaTernaryASTNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF73E24C68CB400DA5FDC /* SemaTernaryASTNode.h */; };
+		A0DDF9AE24C6927400DA5FDC /* SemaAssignASTNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF73F24C68CB400DA5FDC /* SemaAssignASTNode.h */; };
+		A0DDF9AF24C6927400DA5FDC /* SemaFrame.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF72E24C68CB400DA5FDC /* SemaFrame.h */; };
+		A0DDF9B024C6927400DA5FDC /* SemaObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF74B24C68CB400DA5FDC /* SemaObject.h */; };
+		A0DDF9B124C6927400DA5FDC /* SemaForStmt.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF74924C68CB400DA5FDC /* SemaForStmt.h */; };
+		A0DDF9B224C6927400DA5FDC /* SemaASTNodeObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF74524C68CB400DA5FDC /* SemaASTNodeObject.h */; };
+		A0DDF9B324C6927400DA5FDC /* DDObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF74724C68CB400DA5FDC /* DDObject.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A05680E424C69371000297B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0DDF56D24C67F1C00DA5FDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DDF57424C67F1C00DA5FDC;
+			remoteInfo = "DDSL-Runtime";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0DDF57324C67F1C00DA5FDC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A0DDF9A524C6927400DA5FDC /* DDSL-Runtime.h in CopyFiles */,
+				A0DDF9A624C6927400DA5FDC /* SemaASTNode.h in CopyFiles */,
+				A0DDF9A724C6927400DA5FDC /* SemaUnaryASTNode.h in CopyFiles */,
+				A0DDF9A824C6927400DA5FDC /* SemaBinaryASTNode.h in CopyFiles */,
+				A0DDF9A924C6927400DA5FDC /* SemaContextASTNode.h in CopyFiles */,
+				A0DDF9AA24C6927400DA5FDC /* SemaEvalASTNode.h in CopyFiles */,
+				A0DDF9AB24C6927400DA5FDC /* SemaParenthesisASTNode.h in CopyFiles */,
+				A0DDF9AC24C6927400DA5FDC /* SemaPrimaryASTNode.h in CopyFiles */,
+				A0DDF9AD24C6927400DA5FDC /* SemaTernaryASTNode.h in CopyFiles */,
+				A0DDF9AE24C6927400DA5FDC /* SemaAssignASTNode.h in CopyFiles */,
+				A0DDF9AF24C6927400DA5FDC /* SemaFrame.h in CopyFiles */,
+				A0DDF9B024C6927400DA5FDC /* SemaObject.h in CopyFiles */,
+				A0DDF9B124C6927400DA5FDC /* SemaForStmt.h in CopyFiles */,
+				A0DDF9B224C6927400DA5FDC /* SemaASTNodeObject.h in CopyFiles */,
+				A0DDF9B324C6927400DA5FDC /* DDObject.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A05680DE24C69371000297B4 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DDF57524C67F1C00DA5FDC /* libDDSL-Runtime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libDDSL-Runtime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DDF5AF24C6805000DA5FDC /* libDDSL-Libs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDDSL-Libs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DDF71E24C6884700DA5FDC /* libDDSL-Antlr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDDSL-Antlr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DDF72E24C68CB400DA5FDC /* SemaFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaFrame.h; sourceTree = "<group>"; };
+		A0DDF73024C68CB400DA5FDC /* SemaParenthesisASTNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaParenthesisASTNode.cpp; sourceTree = "<group>"; };
+		A0DDF73124C68CB400DA5FDC /* SemaContextASTNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaContextASTNode.cpp; sourceTree = "<group>"; };
+		A0DDF73224C68CB400DA5FDC /* SemaBinaryASTNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaBinaryASTNode.cpp; sourceTree = "<group>"; };
+		A0DDF73324C68CB400DA5FDC /* SemaASTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaASTNode.h; sourceTree = "<group>"; };
+		A0DDF73424C68CB400DA5FDC /* SemaUnaryASTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaUnaryASTNode.h; sourceTree = "<group>"; };
+		A0DDF73524C68CB400DA5FDC /* SemaBinaryASTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaBinaryASTNode.h; sourceTree = "<group>"; };
+		A0DDF73624C68CB400DA5FDC /* SemaContextASTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaContextASTNode.h; sourceTree = "<group>"; };
+		A0DDF73724C68CB400DA5FDC /* SemaEvalASTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaEvalASTNode.h; sourceTree = "<group>"; };
+		A0DDF73824C68CB400DA5FDC /* SemaUnaryASTNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaUnaryASTNode.cpp; sourceTree = "<group>"; };
+		A0DDF73924C68CB400DA5FDC /* SemaParenthesisASTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaParenthesisASTNode.h; sourceTree = "<group>"; };
+		A0DDF73A24C68CB400DA5FDC /* SemaAssignASTNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaAssignASTNode.cpp; sourceTree = "<group>"; };
+		A0DDF73B24C68CB400DA5FDC /* SemaPrimaryASTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaPrimaryASTNode.h; sourceTree = "<group>"; };
+		A0DDF73C24C68CB400DA5FDC /* SemaPrimaryASTNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaPrimaryASTNode.cpp; sourceTree = "<group>"; };
+		A0DDF73D24C68CB400DA5FDC /* SemaEvalASTNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaEvalASTNode.cpp; sourceTree = "<group>"; };
+		A0DDF73E24C68CB400DA5FDC /* SemaTernaryASTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaTernaryASTNode.h; sourceTree = "<group>"; };
+		A0DDF73F24C68CB400DA5FDC /* SemaAssignASTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaAssignASTNode.h; sourceTree = "<group>"; };
+		A0DDF74024C68CB400DA5FDC /* SemaASTNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaASTNode.cpp; sourceTree = "<group>"; };
+		A0DDF74124C68CB400DA5FDC /* SemaTernaryASTNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaTernaryASTNode.cpp; sourceTree = "<group>"; };
+		A0DDF74224C68CB400DA5FDC /* SemaObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaObject.cpp; sourceTree = "<group>"; };
+		A0DDF74424C68CB400DA5FDC /* DDObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DDObject.cpp; sourceTree = "<group>"; };
+		A0DDF74524C68CB400DA5FDC /* SemaASTNodeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaASTNodeObject.h; sourceTree = "<group>"; };
+		A0DDF74624C68CB400DA5FDC /* SemaASTNodeObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaASTNodeObject.cpp; sourceTree = "<group>"; };
+		A0DDF74724C68CB400DA5FDC /* DDObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDObject.h; sourceTree = "<group>"; };
+		A0DDF74924C68CB400DA5FDC /* SemaForStmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaForStmt.h; sourceTree = "<group>"; };
+		A0DDF74A24C68CB400DA5FDC /* SemaForStmt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaForStmt.cpp; sourceTree = "<group>"; };
+		A0DDF74B24C68CB400DA5FDC /* SemaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaObject.h; sourceTree = "<group>"; };
+		A0DDF74C24C68CB400DA5FDC /* DDSL-Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDSL-Runtime.h"; sourceTree = "<group>"; };
+		A0DDF74D24C68CB400DA5FDC /* SemaFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SemaFrame.cpp; sourceTree = "<group>"; };
+		A0DDF9A124C6918500DA5FDC /* libDDSL-Script.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDDSL-Script.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DDF9A324C6925300DA5FDC /* libDDSL-Antlr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDDSL-Antlr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A05680DB24C69371000297B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05680E324C69371000297B4 /* libDDSL-Runtime.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DDF57224C67F1C00DA5FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DDF9A424C6925300DA5FDC /* libDDSL-Antlr.a in Frameworks */,
+				A0DDF9A224C6918500DA5FDC /* libDDSL-Script.a in Frameworks */,
+				A0DDF5B024C6805000DA5FDC /* libDDSL-Libs.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A05680DF24C69371000297B4 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		A0DDF56C24C67F1C00DA5FDC = {
+			isa = PBXGroup;
+			children = (
+				A0DDF57724C67F1C00DA5FDC /* DDSL-Runtime */,
+				A05680DF24C69371000297B4 /* Tests */,
+				A0DDF57624C67F1C00DA5FDC /* Products */,
+				A0DDF5AE24C6805000DA5FDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0DDF57624C67F1C00DA5FDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0DDF57524C67F1C00DA5FDC /* libDDSL-Runtime.a */,
+				A05680DE24C69371000297B4 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0DDF57724C67F1C00DA5FDC /* DDSL-Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				A0DDF74C24C68CB400DA5FDC /* DDSL-Runtime.h */,
+				A0DDF72F24C68CB400DA5FDC /* node */,
+				A0DDF72E24C68CB400DA5FDC /* SemaFrame.h */,
+				A0DDF74D24C68CB400DA5FDC /* SemaFrame.cpp */,
+				A0DDF74B24C68CB400DA5FDC /* SemaObject.h */,
+				A0DDF74224C68CB400DA5FDC /* SemaObject.cpp */,
+				A0DDF74824C68CB400DA5FDC /* stmt */,
+				A0DDF74324C68CB400DA5FDC /* types */,
+			);
+			path = "DDSL-Runtime";
+			sourceTree = "<group>";
+		};
+		A0DDF5AE24C6805000DA5FDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0DDF9A324C6925300DA5FDC /* libDDSL-Antlr.a */,
+				A0DDF9A124C6918500DA5FDC /* libDDSL-Script.a */,
+				A0DDF71E24C6884700DA5FDC /* libDDSL-Antlr.a */,
+				A0DDF5AF24C6805000DA5FDC /* libDDSL-Libs.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0DDF72F24C68CB400DA5FDC /* node */ = {
+			isa = PBXGroup;
+			children = (
+				A0DDF73624C68CB400DA5FDC /* SemaContextASTNode.h */,
+				A0DDF73124C68CB400DA5FDC /* SemaContextASTNode.cpp */,
+				A0DDF73524C68CB400DA5FDC /* SemaBinaryASTNode.h */,
+				A0DDF73224C68CB400DA5FDC /* SemaBinaryASTNode.cpp */,
+				A0DDF73324C68CB400DA5FDC /* SemaASTNode.h */,
+				A0DDF74024C68CB400DA5FDC /* SemaASTNode.cpp */,
+				A0DDF73424C68CB400DA5FDC /* SemaUnaryASTNode.h */,
+				A0DDF73824C68CB400DA5FDC /* SemaUnaryASTNode.cpp */,
+				A0DDF73924C68CB400DA5FDC /* SemaParenthesisASTNode.h */,
+				A0DDF73024C68CB400DA5FDC /* SemaParenthesisASTNode.cpp */,
+				A0DDF73F24C68CB400DA5FDC /* SemaAssignASTNode.h */,
+				A0DDF73A24C68CB400DA5FDC /* SemaAssignASTNode.cpp */,
+				A0DDF73B24C68CB400DA5FDC /* SemaPrimaryASTNode.h */,
+				A0DDF73C24C68CB400DA5FDC /* SemaPrimaryASTNode.cpp */,
+				A0DDF73724C68CB400DA5FDC /* SemaEvalASTNode.h */,
+				A0DDF73D24C68CB400DA5FDC /* SemaEvalASTNode.cpp */,
+				A0DDF73E24C68CB400DA5FDC /* SemaTernaryASTNode.h */,
+				A0DDF74124C68CB400DA5FDC /* SemaTernaryASTNode.cpp */,
+			);
+			path = node;
+			sourceTree = "<group>";
+		};
+		A0DDF74324C68CB400DA5FDC /* types */ = {
+			isa = PBXGroup;
+			children = (
+				A0DDF74724C68CB400DA5FDC /* DDObject.h */,
+				A0DDF74424C68CB400DA5FDC /* DDObject.cpp */,
+				A0DDF74524C68CB400DA5FDC /* SemaASTNodeObject.h */,
+				A0DDF74624C68CB400DA5FDC /* SemaASTNodeObject.cpp */,
+			);
+			path = types;
+			sourceTree = "<group>";
+		};
+		A0DDF74824C68CB400DA5FDC /* stmt */ = {
+			isa = PBXGroup;
+			children = (
+				A0DDF74924C68CB400DA5FDC /* SemaForStmt.h */,
+				A0DDF74A24C68CB400DA5FDC /* SemaForStmt.cpp */,
+			);
+			path = stmt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A05680DD24C69371000297B4 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A05680E824C69371000297B4 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				A05680DA24C69371000297B4 /* Sources */,
+				A05680DB24C69371000297B4 /* Frameworks */,
+				A05680DC24C69371000297B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A05680E524C69371000297B4 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = A05680DE24C69371000297B4 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0DDF57424C67F1C00DA5FDC /* DDSL-Runtime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DDF57E24C67F1C00DA5FDC /* Build configuration list for PBXNativeTarget "DDSL-Runtime" */;
+			buildPhases = (
+				A0DDF57124C67F1C00DA5FDC /* Sources */,
+				A0DDF57224C67F1C00DA5FDC /* Frameworks */,
+				A0DDF57324C67F1C00DA5FDC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DDSL-Runtime";
+			productName = "DDSL-Runtime";
+			productReference = A0DDF57524C67F1C00DA5FDC /* libDDSL-Runtime.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0DDF56D24C67F1C00DA5FDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = youxiaobin;
+				TargetAttributes = {
+					A05680DD24C69371000297B4 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A0DDF57424C67F1C00DA5FDC = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A0DDF57024C67F1C00DA5FDC /* Build configuration list for PBXProject "DDSL-Runtime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0DDF56C24C67F1C00DA5FDC;
+			productRefGroup = A0DDF57624C67F1C00DA5FDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0DDF57424C67F1C00DA5FDC /* DDSL-Runtime */,
+				A05680DD24C69371000297B4 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A05680DC24C69371000297B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A056812924C69552000297B4 /* DDSL-Runtime.h in Resources */,
+				A056812A24C69552000297B4 /* SemaASTNode.h in Resources */,
+				A056812B24C69552000297B4 /* SemaUnaryASTNode.h in Resources */,
+				A056812C24C69552000297B4 /* SemaBinaryASTNode.h in Resources */,
+				A056812D24C69552000297B4 /* SemaContextASTNode.h in Resources */,
+				A056812E24C69552000297B4 /* SemaEvalASTNode.h in Resources */,
+				A056812F24C69552000297B4 /* SemaParenthesisASTNode.h in Resources */,
+				A056813024C69552000297B4 /* SemaPrimaryASTNode.h in Resources */,
+				A056813124C69552000297B4 /* SemaTernaryASTNode.h in Resources */,
+				A056813224C69552000297B4 /* SemaAssignASTNode.h in Resources */,
+				A056813324C69552000297B4 /* SemaFrame.h in Resources */,
+				A056813424C69552000297B4 /* SemaObject.h in Resources */,
+				A056813524C69552000297B4 /* SemaForStmt.h in Resources */,
+				A056813624C69552000297B4 /* SemaASTNodeObject.h in Resources */,
+				A056813724C69552000297B4 /* DDObject.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A05680DA24C69371000297B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DDF57124C67F1C00DA5FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DDF75124C68CB400DA5FDC /* SemaUnaryASTNode.cpp in Sources */,
+				A0DDF75624C68CB400DA5FDC /* SemaTernaryASTNode.cpp in Sources */,
+				A0DDF75A24C68CB400DA5FDC /* SemaForStmt.cpp in Sources */,
+				A0DDF75024C68CB400DA5FDC /* SemaBinaryASTNode.cpp in Sources */,
+				A0DDF75824C68CB400DA5FDC /* DDObject.cpp in Sources */,
+				A0DDF75224C68CB400DA5FDC /* SemaAssignASTNode.cpp in Sources */,
+				A0DDF75924C68CB400DA5FDC /* SemaASTNodeObject.cpp in Sources */,
+				A0DDF75B24C68CB400DA5FDC /* SemaFrame.cpp in Sources */,
+				A0DDF75324C68CB400DA5FDC /* SemaPrimaryASTNode.cpp in Sources */,
+				A0DDF75524C68CB400DA5FDC /* SemaASTNode.cpp in Sources */,
+				A0DDF75724C68CB400DA5FDC /* SemaObject.cpp in Sources */,
+				A0DDF74F24C68CB400DA5FDC /* SemaContextASTNode.cpp in Sources */,
+				A0DDF75424C68CB400DA5FDC /* SemaEvalASTNode.cpp in Sources */,
+				A0DDF74E24C68CB400DA5FDC /* SemaParenthesisASTNode.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A05680E524C69371000297B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0DDF57424C67F1C00DA5FDC /* DDSL-Runtime */;
+			targetProxy = A05680E424C69371000297B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A05680E624C69371000297B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jd.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A05680E724C69371000297B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jd.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0DDF57C24C67F1C00DA5FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A0DDF57D24C67F1C00DA5FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0DDF57F24C67F1C00DA5FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}/DDSL-Runtime/grammar\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0DDF58024C67F1C00DA5FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}/DDSL-Runtime/grammar\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A05680E824C69371000297B4 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05680E624C69371000297B4 /* Debug */,
+				A05680E724C69371000297B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DDF57024C67F1C00DA5FDC /* Build configuration list for PBXProject "DDSL-Runtime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DDF57C24C67F1C00DA5FDC /* Debug */,
+				A0DDF57D24C67F1C00DA5FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DDF57E24C67F1C00DA5FDC /* Build configuration list for PBXNativeTarget "DDSL-Runtime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DDF57F24C67F1C00DA5FDC /* Debug */,
+				A0DDF58024C67F1C00DA5FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0DDF56D24C67F1C00DA5FDC /* Project object */;
+}

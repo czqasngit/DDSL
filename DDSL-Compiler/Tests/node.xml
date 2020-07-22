@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<View flexDirection="row" width="300" height="auto"
+    maxHeight="1000"
+    left="20"
+    top="50"
+    justify="spaceAround"
+    alignItems="stretch"
+    paddingTop="10"
+    paddingBottom="20"
+    paddingLeft="15"
+    paddingRight="15"
+    backgroundColor="#FFCDB2">
+    <View flex="2" height="auto" justify="center" alignItems="center" backgroundColor="#B5838D">
+        <View width="{{ 50 / 2 + 10 }}"
+            height="{{ 59 + 2.5 *2 -3 }}"
+            backgroundColor="#6D6875"
+            borderColor="#e63946"
+            borderWidth="2"
+            shadowColor="#d00000"
+            shadowRadius="15"
+            shadowOpacity="0.5"
+            ></View>
+    </View>
+    <View flex="2" height="200" backgroundColor="#90B36D" justify="start" alignItems="center">
+        <Label text="for测试: {{item[name]}} - {{ item[age] }}" fontSize="20" color="#ffd23f" for="{{ for item in items }}"></Label>
+        <Label text="测试标题2测试标题2测试标题2"
+            fontSize="20"
+            color="#ef233c"
+            marginTop="10"
+            lineNumber="3"
+            backgroundColor="#00ff00"></Label>
+    </View>
+</View>

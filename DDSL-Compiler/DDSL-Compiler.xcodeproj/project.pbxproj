@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A056812024C69431000297B4 /* Compiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A056811B24C69431000297B4 /* Compiler.cpp */; };
+		A056812124C69431000297B4 /* DDXMLBinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A056811C24C69431000297B4 /* DDXMLBinding.cpp */; };
+		A056812424C69466000297B4 /* libDDSL-Libs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A056812324C69466000297B4 /* libDDSL-Libs.a */; };
+		A056812624C69466000297B4 /* libDDSL-Script.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A056812524C69466000297B4 /* libDDSL-Script.a */; };
+		A056812824C694C6000297B4 /* libDDSL-Runtime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A056812724C694C6000297B4 /* libDDSL-Runtime.a */; };
+		A056813824C695BF000297B4 /* Compiler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A056811F24C69431000297B4 /* Compiler.h */; };
+		A056813924C695BF000297B4 /* DDSL-Compiler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A056811D24C69431000297B4 /* DDSL-Compiler.h */; };
+		A056813A24C695BF000297B4 /* DDXMLBinding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A056811E24C69431000297B4 /* DDXMLBinding.h */; };
+		A056814424C695DE000297B4 /* libDDSL-Compiler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A056810924C693F9000297B4 /* libDDSL-Compiler.a */; };
+		A056815524C69614000297B4 /* DynamicDSLTestHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A056814A24C69613000297B4 /* DynamicDSLTestHelper.cpp */; };
+		A056815624C69614000297B4 /* DynamicDSLTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = A056814B24C69613000297B4 /* DynamicDSLTests.mm */; };
+		A056815724C69614000297B4 /* PrimaryASTNodeTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = A056814C24C69613000297B4 /* PrimaryASTNodeTests.mm */; };
+		A056815824C69614000297B4 /* SquareBracketsASTNodeTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = A056814D24C69613000297B4 /* SquareBracketsASTNodeTests.mm */; };
+		A056815924C69614000297B4 /* UnitaryASTNodeTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = A056814E24C69614000297B4 /* UnitaryASTNodeTests.mm */; };
+		A056815A24C69614000297B4 /* BinaryASTNodeTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = A056814F24C69614000297B4 /* BinaryASTNodeTests.mm */; };
+		A056815C24C69614000297B4 /* ForTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = A056815124C69614000297B4 /* ForTests.mm */; };
+		A056815D24C69614000297B4 /* ParenthesisASTNodeTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = A056815324C69614000297B4 /* ParenthesisASTNodeTests.mm */; };
+		A056815E24C69614000297B4 /* TernaryASTNodeTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = A056815424C69614000297B4 /* TernaryASTNodeTests.mm */; };
+		A056816424C69766000297B4 /* BindingTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = A056816324C69766000297B4 /* BindingTests.mm */; };
+		A056816624C697D9000297B4 /* node.xml in Resources */ = {isa = PBXBuildFile; fileRef = A056816524C697D9000297B4 /* node.xml */; };
+		A05681A924C6BEA0000297B4 /* libDDSL-Script.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A05681A824C6BEA0000297B4 /* libDDSL-Script.a */; };
+		A05681AE24C6CC1F000297B4 /* DDIR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681AD24C6CC1F000297B4 /* DDIR.cpp */; };
+		A05681AF24C6CC1F000297B4 /* DDIR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681AD24C6CC1F000297B4 /* DDIR.cpp */; };
+		A05681B124C6EB7D000297B4 /* node_ir.xml in Resources */ = {isa = PBXBuildFile; fileRef = A05681B024C6EB7D000297B4 /* node_ir.xml */; };
+		A056825E24C7DCBF000297B4 /* DDIR.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681AC24C6CC1F000297B4 /* DDIR.h */; };
+		A056826124C80B41000297B4 /* IRCompiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A056825F24C80B41000297B4 /* IRCompiler.cpp */; };
+		A056826224C815B4000297B4 /* IRCompiler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A056826024C80B41000297B4 /* IRCompiler.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A056814524C695DE000297B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A056810124C693F9000297B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A056810824C693F9000297B4;
+			remoteInfo = "DDSL-Compiler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A056810724C693F9000297B4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A056826224C815B4000297B4 /* IRCompiler.h in CopyFiles */,
+				A056825E24C7DCBF000297B4 /* DDIR.h in CopyFiles */,
+				A056813824C695BF000297B4 /* Compiler.h in CopyFiles */,
+				A056813924C695BF000297B4 /* DDSL-Compiler.h in CopyFiles */,
+				A056813A24C695BF000297B4 /* DDXMLBinding.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A056810924C693F9000297B4 /* libDDSL-Compiler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libDDSL-Compiler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A056811B24C69431000297B4 /* Compiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Compiler.cpp; sourceTree = "<group>"; };
+		A056811C24C69431000297B4 /* DDXMLBinding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DDXMLBinding.cpp; sourceTree = "<group>"; };
+		A056811D24C69431000297B4 /* DDSL-Compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDSL-Compiler.h"; sourceTree = "<group>"; };
+		A056811E24C69431000297B4 /* DDXMLBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLBinding.h; sourceTree = "<group>"; };
+		A056811F24C69431000297B4 /* Compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compiler.h; sourceTree = "<group>"; };
+		A056812324C69466000297B4 /* libDDSL-Libs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDDSL-Libs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A056812524C69466000297B4 /* libDDSL-Script.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDDSL-Script.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A056812724C694C6000297B4 /* libDDSL-Runtime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDDSL-Runtime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A056813F24C695DE000297B4 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A056814A24C69613000297B4 /* DynamicDSLTestHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicDSLTestHelper.cpp; sourceTree = "<group>"; };
+		A056814B24C69613000297B4 /* DynamicDSLTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DynamicDSLTests.mm; sourceTree = "<group>"; };
+		A056814C24C69613000297B4 /* PrimaryASTNodeTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PrimaryASTNodeTests.mm; sourceTree = "<group>"; };
+		A056814D24C69613000297B4 /* SquareBracketsASTNodeTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SquareBracketsASTNodeTests.mm; sourceTree = "<group>"; };
+		A056814E24C69614000297B4 /* UnitaryASTNodeTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UnitaryASTNodeTests.mm; sourceTree = "<group>"; };
+		A056814F24C69614000297B4 /* BinaryASTNodeTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BinaryASTNodeTests.mm; sourceTree = "<group>"; };
+		A056815124C69614000297B4 /* ForTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ForTests.mm; sourceTree = "<group>"; };
+		A056815224C69614000297B4 /* DynamicDSLTestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicDSLTestHelper.h; sourceTree = "<group>"; };
+		A056815324C69614000297B4 /* ParenthesisASTNodeTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParenthesisASTNodeTests.mm; sourceTree = "<group>"; };
+		A056815424C69614000297B4 /* TernaryASTNodeTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TernaryASTNodeTests.mm; sourceTree = "<group>"; };
+		A056816324C69766000297B4 /* BindingTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BindingTests.mm; sourceTree = "<group>"; };
+		A056816524C697D9000297B4 /* node.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = node.xml; sourceTree = "<group>"; };
+		A05681A824C6BEA0000297B4 /* libDDSL-Script.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDDSL-Script.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05681AC24C6CC1F000297B4 /* DDIR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDIR.h; sourceTree = "<group>"; };
+		A05681AD24C6CC1F000297B4 /* DDIR.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DDIR.cpp; sourceTree = "<group>"; };
+		A05681B024C6EB7D000297B4 /* node_ir.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = node_ir.xml; sourceTree = "<group>"; };
+		A056825F24C80B41000297B4 /* IRCompiler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IRCompiler.cpp; sourceTree = "<group>"; };
+		A056826024C80B41000297B4 /* IRCompiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRCompiler.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A056810624C693F9000297B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A056812824C694C6000297B4 /* libDDSL-Runtime.a in Frameworks */,
+				A056812424C69466000297B4 /* libDDSL-Libs.a in Frameworks */,
+				A056812624C69466000297B4 /* libDDSL-Script.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A056813C24C695DE000297B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05681A924C6BEA0000297B4 /* libDDSL-Script.a in Frameworks */,
+				A056814424C695DE000297B4 /* libDDSL-Compiler.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A056810024C693F9000297B4 = {
+			isa = PBXGroup;
+			children = (
+				A056810B24C693F9000297B4 /* DDSL-Compiler */,
+				A056814024C695DE000297B4 /* Tests */,
+				A056810A24C693F9000297B4 /* Products */,
+				A056812224C69466000297B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A056810A24C693F9000297B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A056810924C693F9000297B4 /* libDDSL-Compiler.a */,
+				A056813F24C695DE000297B4 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A056810B24C693F9000297B4 /* DDSL-Compiler */ = {
+			isa = PBXGroup;
+			children = (
+				A056811D24C69431000297B4 /* DDSL-Compiler.h */,
+				A05681AC24C6CC1F000297B4 /* DDIR.h */,
+				A05681AD24C6CC1F000297B4 /* DDIR.cpp */,
+				A056811F24C69431000297B4 /* Compiler.h */,
+				A056811B24C69431000297B4 /* Compiler.cpp */,
+				A056811E24C69431000297B4 /* DDXMLBinding.h */,
+				A056811C24C69431000297B4 /* DDXMLBinding.cpp */,
+				A056826024C80B41000297B4 /* IRCompiler.h */,
+				A056825F24C80B41000297B4 /* IRCompiler.cpp */,
+			);
+			path = "DDSL-Compiler";
+			sourceTree = "<group>";
+		};
+		A056812224C69466000297B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A05681A824C6BEA0000297B4 /* libDDSL-Script.a */,
+				A056812724C694C6000297B4 /* libDDSL-Runtime.a */,
+				A056812324C69466000297B4 /* libDDSL-Libs.a */,
+				A056812524C69466000297B4 /* libDDSL-Script.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A056814024C695DE000297B4 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A056816524C697D9000297B4 /* node.xml */,
+				A05681B024C6EB7D000297B4 /* node_ir.xml */,
+				A056816324C69766000297B4 /* BindingTests.mm */,
+				A056814F24C69614000297B4 /* BinaryASTNodeTests.mm */,
+				A056814A24C69613000297B4 /* DynamicDSLTestHelper.cpp */,
+				A056815224C69614000297B4 /* DynamicDSLTestHelper.h */,
+				A056814B24C69613000297B4 /* DynamicDSLTests.mm */,
+				A056815124C69614000297B4 /* ForTests.mm */,
+				A056815324C69614000297B4 /* ParenthesisASTNodeTests.mm */,
+				A056814C24C69613000297B4 /* PrimaryASTNodeTests.mm */,
+				A056814D24C69613000297B4 /* SquareBracketsASTNodeTests.mm */,
+				A056815424C69614000297B4 /* TernaryASTNodeTests.mm */,
+				A056814E24C69614000297B4 /* UnitaryASTNodeTests.mm */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A056810824C693F9000297B4 /* DDSL-Compiler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A056811224C693F9000297B4 /* Build configuration list for PBXNativeTarget "DDSL-Compiler" */;
+			buildPhases = (
+				A056810524C693F9000297B4 /* Sources */,
+				A056810624C693F9000297B4 /* Frameworks */,
+				A056810724C693F9000297B4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DDSL-Compiler";
+			productName = "DDSL-Compiler";
+			productReference = A056810924C693F9000297B4 /* libDDSL-Compiler.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A056813E24C695DE000297B4 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A056814724C695DE000297B4 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				A056813B24C695DE000297B4 /* Sources */,
+				A056813C24C695DE000297B4 /* Frameworks */,
+				A056813D24C695DE000297B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A056814624C695DE000297B4 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = A056813F24C695DE000297B4 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A056810124C693F9000297B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = youxiaobin;
+				TargetAttributes = {
+					A056810824C693F9000297B4 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A056813E24C695DE000297B4 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A056810424C693F9000297B4 /* Build configuration list for PBXProject "DDSL-Compiler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A056810024C693F9000297B4;
+			productRefGroup = A056810A24C693F9000297B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A056810824C693F9000297B4 /* DDSL-Compiler */,
+				A056813E24C695DE000297B4 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A056813D24C695DE000297B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05681B124C6EB7D000297B4 /* node_ir.xml in Resources */,
+				A056816624C697D9000297B4 /* node.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A056810524C693F9000297B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05681AE24C6CC1F000297B4 /* DDIR.cpp in Sources */,
+				A056826124C80B41000297B4 /* IRCompiler.cpp in Sources */,
+				A056812024C69431000297B4 /* Compiler.cpp in Sources */,
+				A056812124C69431000297B4 /* DDXMLBinding.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A056813B24C695DE000297B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A056815A24C69614000297B4 /* BinaryASTNodeTests.mm in Sources */,
+				A056815E24C69614000297B4 /* TernaryASTNodeTests.mm in Sources */,
+				A056815824C69614000297B4 /* SquareBracketsASTNodeTests.mm in Sources */,
+				A056815524C69614000297B4 /* DynamicDSLTestHelper.cpp in Sources */,
+				A056815624C69614000297B4 /* DynamicDSLTests.mm in Sources */,
+				A05681AF24C6CC1F000297B4 /* DDIR.cpp in Sources */,
+				A056816424C69766000297B4 /* BindingTests.mm in Sources */,
+				A056815C24C69614000297B4 /* ForTests.mm in Sources */,
+				A056815724C69614000297B4 /* PrimaryASTNodeTests.mm in Sources */,
+				A056815924C69614000297B4 /* UnitaryASTNodeTests.mm in Sources */,
+				A056815D24C69614000297B4 /* ParenthesisASTNodeTests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A056814624C695DE000297B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A056810824C693F9000297B4 /* DDSL-Compiler */;
+			targetProxy = A056814524C695DE000297B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A056811024C693F9000297B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A056811124C693F9000297B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A056811324C693F9000297B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A056811424C693F9000297B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A056814824C695DE000297B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jd.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A056814924C695DE000297B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jd.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A056810424C693F9000297B4 /* Build configuration list for PBXProject "DDSL-Compiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A056811024C693F9000297B4 /* Debug */,
+				A056811124C693F9000297B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A056811224C693F9000297B4 /* Build configuration list for PBXNativeTarget "DDSL-Compiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A056811324C693F9000297B4 /* Debug */,
+				A056811424C693F9000297B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A056814724C695DE000297B4 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A056814824C695DE000297B4 /* Debug */,
+				A056814924C695DE000297B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A056810124C693F9000297B4 /* Project object */;
+}

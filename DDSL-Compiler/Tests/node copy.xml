@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<View>
+    <View text="年龄: {{ 33.22 * 2}}" color="{{ item[age] >= 20 ? '#FFFFFF' : '#DDDDDD' }}" for="{{ for item in items }}">
+    </View>
+    <View>
+        <View for="{{ for item in items }}">
+            <Label text="{{item[name]}}"></Label>
+            <Image for="{{ for link in images }}" link="{{ link }}"></Image>
+        </View>
+    </View>
+    <Label for="{{ for item in items }}" text="姓名: {{ item[name] }}, 年龄: {{item[age]}} -_-"></Label>
+    
+    <View for="{{ for item in items }}" if="{{ item[age] < 20 }}" text = "{{ item[name] }}" >
+        <Label text = "{{ item[age] }} - {{ item[name] }}"/>
+    </View>
+    <View for="{{ for item in items }}" text="{{ item[name] }}" >
+        <Label text = "{{ item[age] }} - {{ item[name] }}" if="{{ item[age] < 20 }}"/>
+    </View>
+</View>

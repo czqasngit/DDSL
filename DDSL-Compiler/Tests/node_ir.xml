@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<View flexDirection="row" width="300" height="auto" maxHeight="1000" left="20" top="50" justify="spaceAround" alignItems="stretch" paddingTop="10" paddingBottom="20" paddingLeft="15" paddingRight="15" backgroundColor="#FFCDB2">
+    <View flex="2" height="200" backgroundColor="#90B36D" justify="start" alignItems="center">
+        <Label text="for测试: {{W3siS2V5IjogIm5hbWUiLCAiTm9kZSI6IHsiU3ViVHlwZSI6ICJJRCIsICJUeXBlIjogIlByaW1hcnkiLCAiVmFsdWUiOiAiaXRlbSJ9LCAiVHlwZSI6ICJFdmFsIn1d}} - {{W3siS2V5IjogImFnZSIsICJOb2RlIjogeyJTdWJUeXBlIjogIklEIiwgIlR5cGUiOiAiUHJpbWFyeSIsICJWYWx1ZSI6ICJpdGVtIn0sICJUeXBlIjogIkV2YWwifV0=}}" fontSize="20" color="#ffd23f" for="{{eyJBcnJheU5hbWUiOiAiaXRlbXMiLCAiSXRlbUtleSI6ICJpdGVtIiwgIlR5cGUiOiAiRm9yIn0=}}"/>
+        <Label text="测试标题2测试标题2测试标题2: {{W3siS2V5IjogImFnZSIsICJOb2RlIjogeyJTdWJUeXBlIjogIklEIiwgIlR5cGUiOiAiUHJpbWFyeSIsICJWYWx1ZSI6ICJpdGVtIn0sICJUeXBlIjogIkV2YWwifV0=}}" fontSize="{{W3siVHlwZSI6ICJUZXJuYXJ5IiwgImNvbmRpdGlvbiI6IHsiTGVmdCI6IHsiU3ViVHlwZSI6ICJJRCIsICJUeXBlIjogIlByaW1hcnkiLCAiVmFsdWUiOiAiYWdleCJ9LCAiT1AiOiAiPiIsICJSaWdodCI6IHsiU3ViVHlwZSI6ICJJbnQiLCAiVHlwZSI6ICJQcmltYXJ5IiwgIlZhbHVlIjogIjIwIn0sICJUeXBlIjogIkJpbmFyeSJ9LCAiZmlyc3QiOiB7IlN1YlR5cGUiOiAiSW50IiwgIlR5cGUiOiAiUHJpbWFyeSIsICJWYWx1ZSI6ICIyMCJ9LCAic2Vjb25kIjogeyJTdWJUeXBlIjogIkludCIsICJUeXBlIjogIlByaW1hcnkiLCAiVmFsdWUiOiAiMTAifX1d}}" color="#ef233c" marginTop="10" lineNumber="3" backgroundColor="#00ff00"/>
+    </View>
+</View>

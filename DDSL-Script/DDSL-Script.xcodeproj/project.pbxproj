@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A056819724C6BCE6000297B4 /* DDExprHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A056819524C6BCE6000297B4 /* DDExprHelper.cpp */; };
+		A056819824C6BD2F000297B4 /* DDExprHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A056819624C6BCE6000297B4 /* DDExprHelper.h */; };
+		A05681A024C6BD5B000297B4 /* ScriptTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = A056819F24C6BD5B000297B4 /* ScriptTests.mm */; };
+		A05681A224C6BD5B000297B4 /* libDDSL-Script.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DDF96F24C690E000DA5FDC /* libDDSL-Script.a */; };
+		A0DDF97524C690E000DA5FDC /* DDSL-Script.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF97224C690E000DA5FDC /* DDSL-Script.h */; };
+		A0DDF99924C6910E00DA5FDC /* DynamicDSLScriptParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF98924C6910E00DA5FDC /* DynamicDSLScriptParser.cpp */; };
+		A0DDF99A24C6910E00DA5FDC /* DynamicDSLScriptVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF98B24C6910E00DA5FDC /* DynamicDSLScriptVisitor.cpp */; };
+		A0DDF99B24C6910E00DA5FDC /* DynamicDSLScriptLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF98E24C6910E00DA5FDC /* DynamicDSLScriptLexer.cpp */; };
+		A0DDF99C24C6910E00DA5FDC /* DynamicDSLScriptBaseVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0DDF99424C6910E00DA5FDC /* DynamicDSLScriptBaseVisitor.cpp */; };
+		A0DDF99D24C6917500DA5FDC /* DynamicDSLScriptParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF97E24C6910E00DA5FDC /* DynamicDSLScriptParser.h */; };
+		A0DDF99E24C6917500DA5FDC /* DynamicDSLScriptBaseVisitor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF98D24C6910E00DA5FDC /* DynamicDSLScriptBaseVisitor.h */; };
+		A0DDF99F24C6917500DA5FDC /* DynamicDSLScriptLexer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF99024C6910E00DA5FDC /* DynamicDSLScriptLexer.h */; };
+		A0DDF9A024C6917500DA5FDC /* DynamicDSLScriptVisitor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0DDF99224C6910E00DA5FDC /* DynamicDSLScriptVisitor.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A05681A324C6BD5B000297B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0DDF96724C690E000DA5FDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DDF96E24C690E000DA5FDC;
+			remoteInfo = "DDSL-Script";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0DDF96D24C690E000DA5FDC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A056819824C6BD2F000297B4 /* DDExprHelper.h in CopyFiles */,
+				A0DDF99D24C6917500DA5FDC /* DynamicDSLScriptParser.h in CopyFiles */,
+				A0DDF99E24C6917500DA5FDC /* DynamicDSLScriptBaseVisitor.h in CopyFiles */,
+				A0DDF99F24C6917500DA5FDC /* DynamicDSLScriptLexer.h in CopyFiles */,
+				A0DDF9A024C6917500DA5FDC /* DynamicDSLScriptVisitor.h in CopyFiles */,
+				A0DDF97524C690E000DA5FDC /* DDSL-Script.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A056819524C6BCE6000297B4 /* DDExprHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DDExprHelper.cpp; sourceTree = "<group>"; };
+		A056819624C6BCE6000297B4 /* DDExprHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDExprHelper.h; sourceTree = "<group>"; };
+		A056819D24C6BD5B000297B4 /* ScriptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScriptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A056819F24C6BD5B000297B4 /* ScriptTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ScriptTests.mm; sourceTree = "<group>"; };
+		A05681A124C6BD5B000297B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DDF96F24C690E000DA5FDC /* libDDSL-Script.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libDDSL-Script.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DDF97224C690E000DA5FDC /* DDSL-Script.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDSL-Script.h"; sourceTree = "<group>"; };
+		A0DDF97E24C6910E00DA5FDC /* DynamicDSLScriptParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicDSLScriptParser.h; sourceTree = "<group>"; };
+		A0DDF98924C6910E00DA5FDC /* DynamicDSLScriptParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicDSLScriptParser.cpp; sourceTree = "<group>"; };
+		A0DDF98B24C6910E00DA5FDC /* DynamicDSLScriptVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicDSLScriptVisitor.cpp; sourceTree = "<group>"; };
+		A0DDF98D24C6910E00DA5FDC /* DynamicDSLScriptBaseVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicDSLScriptBaseVisitor.h; sourceTree = "<group>"; };
+		A0DDF98E24C6910E00DA5FDC /* DynamicDSLScriptLexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicDSLScriptLexer.cpp; sourceTree = "<group>"; };
+		A0DDF99024C6910E00DA5FDC /* DynamicDSLScriptLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicDSLScriptLexer.h; sourceTree = "<group>"; };
+		A0DDF99224C6910E00DA5FDC /* DynamicDSLScriptVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicDSLScriptVisitor.h; sourceTree = "<group>"; };
+		A0DDF99424C6910E00DA5FDC /* DynamicDSLScriptBaseVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicDSLScriptBaseVisitor.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A056819A24C6BD5A000297B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05681A224C6BD5B000297B4 /* libDDSL-Script.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DDF96C24C690E000DA5FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A056819424C6BCD1000297B4 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				A056819524C6BCE6000297B4 /* DDExprHelper.cpp */,
+				A056819624C6BCE6000297B4 /* DDExprHelper.h */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		A056819E24C6BD5B000297B4 /* ScriptTests */ = {
+			isa = PBXGroup;
+			children = (
+				A056819F24C6BD5B000297B4 /* ScriptTests.mm */,
+				A05681A124C6BD5B000297B4 /* Info.plist */,
+			);
+			path = ScriptTests;
+			sourceTree = "<group>";
+		};
+		A0DDF96624C690E000DA5FDC = {
+			isa = PBXGroup;
+			children = (
+				A0DDF97124C690E000DA5FDC /* DDSL-Script */,
+				A056819E24C6BD5B000297B4 /* ScriptTests */,
+				A0DDF97024C690E000DA5FDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0DDF97024C690E000DA5FDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0DDF96F24C690E000DA5FDC /* libDDSL-Script.a */,
+				A056819D24C6BD5B000297B4 /* ScriptTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0DDF97124C690E000DA5FDC /* DDSL-Script */ = {
+			isa = PBXGroup;
+			children = (
+				A056819424C6BCD1000297B4 /* helper */,
+				A0DDF97B24C6910E00DA5FDC /* grammar */,
+				A0DDF97224C690E000DA5FDC /* DDSL-Script.h */,
+			);
+			path = "DDSL-Script";
+			sourceTree = "<group>";
+		};
+		A0DDF97B24C6910E00DA5FDC /* grammar */ = {
+			isa = PBXGroup;
+			children = (
+				A0DDF97E24C6910E00DA5FDC /* DynamicDSLScriptParser.h */,
+				A0DDF98924C6910E00DA5FDC /* DynamicDSLScriptParser.cpp */,
+				A0DDF98B24C6910E00DA5FDC /* DynamicDSLScriptVisitor.cpp */,
+				A0DDF98D24C6910E00DA5FDC /* DynamicDSLScriptBaseVisitor.h */,
+				A0DDF98E24C6910E00DA5FDC /* DynamicDSLScriptLexer.cpp */,
+				A0DDF99024C6910E00DA5FDC /* DynamicDSLScriptLexer.h */,
+				A0DDF99224C6910E00DA5FDC /* DynamicDSLScriptVisitor.h */,
+				A0DDF99424C6910E00DA5FDC /* DynamicDSLScriptBaseVisitor.cpp */,
+			);
+			path = grammar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A056819C24C6BD5A000297B4 /* ScriptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A05681A524C6BD5B000297B4 /* Build configuration list for PBXNativeTarget "ScriptTests" */;
+			buildPhases = (
+				A056819924C6BD5A000297B4 /* Sources */,
+				A056819A24C6BD5A000297B4 /* Frameworks */,
+				A056819B24C6BD5A000297B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A05681A424C6BD5B000297B4 /* PBXTargetDependency */,
+			);
+			name = ScriptTests;
+			productName = ScriptTests;
+			productReference = A056819D24C6BD5B000297B4 /* ScriptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0DDF96E24C690E000DA5FDC /* DDSL-Script */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DDF97824C690E000DA5FDC /* Build configuration list for PBXNativeTarget "DDSL-Script" */;
+			buildPhases = (
+				A0DDF96B24C690E000DA5FDC /* Sources */,
+				A0DDF96C24C690E000DA5FDC /* Frameworks */,
+				A0DDF96D24C690E000DA5FDC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DDSL-Script";
+			productName = "DDSL-Script";
+			productReference = A0DDF96F24C690E000DA5FDC /* libDDSL-Script.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0DDF96724C690E000DA5FDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = youxiaobin;
+				TargetAttributes = {
+					A056819C24C6BD5A000297B4 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A0DDF96E24C690E000DA5FDC = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A0DDF96A24C690E000DA5FDC /* Build configuration list for PBXProject "DDSL-Script" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0DDF96624C690E000DA5FDC;
+			productRefGroup = A0DDF97024C690E000DA5FDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0DDF96E24C690E000DA5FDC /* DDSL-Script */,
+				A056819C24C6BD5A000297B4 /* ScriptTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A056819B24C6BD5A000297B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A056819924C6BD5A000297B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05681A024C6BD5B000297B4 /* ScriptTests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DDF96B24C690E000DA5FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DDF99A24C6910E00DA5FDC /* DynamicDSLScriptVisitor.cpp in Sources */,
+				A0DDF99924C6910E00DA5FDC /* DynamicDSLScriptParser.cpp in Sources */,
+				A056819724C6BCE6000297B4 /* DDExprHelper.cpp in Sources */,
+				A0DDF99C24C6910E00DA5FDC /* DynamicDSLScriptBaseVisitor.cpp in Sources */,
+				A0DDF99B24C6910E00DA5FDC /* DynamicDSLScriptLexer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A05681A424C6BD5B000297B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0DDF96E24C690E000DA5FDC /* DDSL-Script */;
+			targetProxy = A05681A324C6BD5B000297B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A05681A624C6BD5B000297B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScriptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jd.ScriptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A05681A724C6BD5B000297B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScriptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jd.ScriptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0DDF97624C690E000DA5FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A0DDF97724C690E000DA5FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0DDF97924C690E000DA5FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0DDF97A24C690E000DA5FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A05681A524C6BD5B000297B4 /* Build configuration list for PBXNativeTarget "ScriptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05681A624C6BD5B000297B4 /* Debug */,
+				A05681A724C6BD5B000297B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DDF96A24C690E000DA5FDC /* Build configuration list for PBXProject "DDSL-Script" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DDF97624C690E000DA5FDC /* Debug */,
+				A0DDF97724C690E000DA5FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DDF97824C690E000DA5FDC /* Build configuration list for PBXNativeTarget "DDSL-Script" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DDF97924C690E000DA5FDC /* Debug */,
+				A0DDF97A24C690E000DA5FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0DDF96724C690E000DA5FDC /* Project object */;
+}

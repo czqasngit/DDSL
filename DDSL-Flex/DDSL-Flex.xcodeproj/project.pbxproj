@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A05681C524C7CECE000297B4 /* DDSL-Flex.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681C224C7CECE000297B4 /* DDSL-Flex.h */; };
+		A05681CD24C7CEF9000297B4 /* libDDSL-Compiler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A05681CC24C7CEF9000297B4 /* libDDSL-Compiler.a */; };
+		A05681CF24C7CEF9000297B4 /* libDDSL-Libs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A05681CE24C7CEF9000297B4 /* libDDSL-Libs.a */; };
+		A05681D124C7CEF9000297B4 /* libDDSL-Runtime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A05681D024C7CEF9000297B4 /* libDDSL-Runtime.a */; };
+		A056820524C7CFD3000297B4 /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681DA24C7CFD3000297B4 /* log.cpp */; };
+		A056820624C7CFD3000297B4 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681DB24C7CFD3000297B4 /* Utils.cpp */; };
+		A056820724C7CFD3000297B4 /* YGLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681DE24C7CFD3000297B4 /* YGLayout.cpp */; };
+		A056820824C7CFD3000297B4 /* Yoga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681E124C7CFD3000297B4 /* Yoga.cpp */; };
+		A056820924C7CFD3000297B4 /* YGStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681E224C7CFD3000297B4 /* YGStyle.cpp */; };
+		A056820A24C7CFD3000297B4 /* experiments.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681E524C7CFD3000297B4 /* experiments.cpp */; };
+		A056820B24C7CFD3000297B4 /* YGNodePrint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681E824C7CFD3000297B4 /* YGNodePrint.cpp */; };
+		A056820C24C7CFD3000297B4 /* YGEnums.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681EA24C7CFD3000297B4 /* YGEnums.cpp */; };
+		A056820D24C7CFD3000297B4 /* YGValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681EC24C7CFD3000297B4 /* YGValue.cpp */; };
+		A056820E24C7CFD3000297B4 /* YGConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681EF24C7CFD3000297B4 /* YGConfig.cpp */; };
+		A056820F24C7CFD3000297B4 /* YGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681F024C7CFD3000297B4 /* YGNode.cpp */; };
+		A056821024C7CFD3000297B4 /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681F424C7CFD3000297B4 /* event.cpp */; };
+		A056821124C7CFD3000297B4 /* NodeParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681F924C7CFD3000297B4 /* NodeParser.cpp */; };
+		A056821224C7CFD3000297B4 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681FA24C7CFD3000297B4 /* Node.cpp */; };
+		A056821324C7CFD3000297B4 /* TextNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05681FC24C7CFD3000297B4 /* TextNode.cpp */; };
+		A056823A24C7D105000297B4 /* utils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681F624C7CFD3000297B4 /* utils.h */; };
+		A056823B24C7D105000297B4 /* NodeParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681F824C7CFD3000297B4 /* NodeParser.h */; };
+		A056823C24C7D105000297B4 /* Node.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681FB24C7CFD3000297B4 /* Node.h */; };
+		A056823D24C7D105000297B4 /* TextNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681FD24C7CFD3000297B4 /* TextNode.h */; };
+		A056823E24C7D105000297B4 /* data.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681FE24C7CFD3000297B4 /* data.h */; };
+		A056823F24C7D105000297B4 /* enums.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681FF24C7CFD3000297B4 /* enums.h */; };
+		A056824024C7D105000297B4 /* display.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A056820024C7CFD3000297B4 /* display.h */; };
+		A056824124C7D105000297B4 /* executable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A056820124C7CFD3000297B4 /* executable.h */; };
+		A056824224C7D105000297B4 /* flexLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681D324C7CFD3000297B4 /* flexLog.h */; };
+		A056824324C7D105000297B4 /* YGFloatOptional.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681D524C7CFD3000297B4 /* YGFloatOptional.h */; };
+		A056824424C7D105000297B4 /* Utils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681D624C7CFD3000297B4 /* Utils.h */; };
+		A056824524C7D105000297B4 /* CompactValue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681D724C7CFD3000297B4 /* CompactValue.h */; };
+		A056824624C7D105000297B4 /* Yoga-internal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681D824C7CFD3000297B4 /* Yoga-internal.h */; };
+		A056824724C7D105000297B4 /* YGLayout.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681D924C7CFD3000297B4 /* YGLayout.h */; };
+		A056824824C7D105000297B4 /* YGNodePrint.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681DC24C7CFD3000297B4 /* YGNodePrint.h */; };
+		A056824924C7D105000297B4 /* YGEnums.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681DD24C7CFD3000297B4 /* YGEnums.h */; };
+		A056824A24C7D105000297B4 /* YGNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681DF24C7CFD3000297B4 /* YGNode.h */; };
+		A056824B24C7D105000297B4 /* YGMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681E024C7CFD3000297B4 /* YGMacros.h */; };
+		A056824C24C7D105000297B4 /* Yoga.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681E324C7CFD3000297B4 /* Yoga.h */; };
+		A056824D24C7D105000297B4 /* experiments-inl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681E624C7CFD3000297B4 /* experiments-inl.h */; };
+		A056824E24C7D105000297B4 /* experiments.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681E724C7CFD3000297B4 /* experiments.h */; };
+		A056824F24C7D105000297B4 /* YGStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681E924C7CFD3000297B4 /* YGStyle.h */; };
+		A056825024C7D105000297B4 /* log.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681EB24C7CFD3000297B4 /* log.h */; };
+		A056825124C7D105000297B4 /* BitUtils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681ED24C7CFD3000297B4 /* BitUtils.h */; };
+		A056825224C7D105000297B4 /* YGConfig.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681EE24C7CFD3000297B4 /* YGConfig.h */; };
+		A056825324C7D105000297B4 /* YGValue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681F124C7CFD3000297B4 /* YGValue.h */; };
+		A056825424C7D105000297B4 /* event.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05681F324C7CFD3000297B4 /* event.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A05681BD24C7CECE000297B4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A056823A24C7D105000297B4 /* utils.h in CopyFiles */,
+				A056823B24C7D105000297B4 /* NodeParser.h in CopyFiles */,
+				A056823C24C7D105000297B4 /* Node.h in CopyFiles */,
+				A056823D24C7D105000297B4 /* TextNode.h in CopyFiles */,
+				A056823E24C7D105000297B4 /* data.h in CopyFiles */,
+				A056823F24C7D105000297B4 /* enums.h in CopyFiles */,
+				A056824024C7D105000297B4 /* display.h in CopyFiles */,
+				A056824124C7D105000297B4 /* executable.h in CopyFiles */,
+				A056824224C7D105000297B4 /* flexLog.h in CopyFiles */,
+				A056824324C7D105000297B4 /* YGFloatOptional.h in CopyFiles */,
+				A056824424C7D105000297B4 /* Utils.h in CopyFiles */,
+				A056824524C7D105000297B4 /* CompactValue.h in CopyFiles */,
+				A056824624C7D105000297B4 /* Yoga-internal.h in CopyFiles */,
+				A056824724C7D105000297B4 /* YGLayout.h in CopyFiles */,
+				A056824824C7D105000297B4 /* YGNodePrint.h in CopyFiles */,
+				A056824924C7D105000297B4 /* YGEnums.h in CopyFiles */,
+				A056824A24C7D105000297B4 /* YGNode.h in CopyFiles */,
+				A056824B24C7D105000297B4 /* YGMacros.h in CopyFiles */,
+				A056824C24C7D105000297B4 /* Yoga.h in CopyFiles */,
+				A056824D24C7D105000297B4 /* experiments-inl.h in CopyFiles */,
+				A056824E24C7D105000297B4 /* experiments.h in CopyFiles */,
+				A056824F24C7D105000297B4 /* YGStyle.h in CopyFiles */,
+				A056825024C7D105000297B4 /* log.h in CopyFiles */,
+				A056825124C7D105000297B4 /* BitUtils.h in CopyFiles */,
+				A056825224C7D105000297B4 /* YGConfig.h in CopyFiles */,
+				A056825324C7D105000297B4 /* YGValue.h in CopyFiles */,
+				A056825424C7D105000297B4 /* event.h in CopyFiles */,
+				A05681C524C7CECE000297B4 /* DDSL-Flex.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A05681BF24C7CECE000297B4 /* libDDSL-Flex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libDDSL-Flex.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05681C224C7CECE000297B4 /* DDSL-Flex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDSL-Flex.h"; sourceTree = "<group>"; };
+		A05681CC24C7CEF9000297B4 /* libDDSL-Compiler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDDSL-Compiler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05681CE24C7CEF9000297B4 /* libDDSL-Libs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDDSL-Libs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05681D024C7CEF9000297B4 /* libDDSL-Runtime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDDSL-Runtime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05681D324C7CFD3000297B4 /* flexLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flexLog.h; sourceTree = "<group>"; };
+		A05681D524C7CFD3000297B4 /* YGFloatOptional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGFloatOptional.h; sourceTree = "<group>"; };
+		A05681D624C7CFD3000297B4 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		A05681D724C7CFD3000297B4 /* CompactValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompactValue.h; sourceTree = "<group>"; };
+		A05681D824C7CFD3000297B4 /* Yoga-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Yoga-internal.h"; sourceTree = "<group>"; };
+		A05681D924C7CFD3000297B4 /* YGLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGLayout.h; sourceTree = "<group>"; };
+		A05681DA24C7CFD3000297B4 /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
+		A05681DB24C7CFD3000297B4 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		A05681DC24C7CFD3000297B4 /* YGNodePrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGNodePrint.h; sourceTree = "<group>"; };
+		A05681DD24C7CFD3000297B4 /* YGEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGEnums.h; sourceTree = "<group>"; };
+		A05681DE24C7CFD3000297B4 /* YGLayout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGLayout.cpp; sourceTree = "<group>"; };
+		A05681DF24C7CFD3000297B4 /* YGNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGNode.h; sourceTree = "<group>"; };
+		A05681E024C7CFD3000297B4 /* YGMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGMacros.h; sourceTree = "<group>"; };
+		A05681E124C7CFD3000297B4 /* Yoga.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Yoga.cpp; sourceTree = "<group>"; };
+		A05681E224C7CFD3000297B4 /* YGStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGStyle.cpp; sourceTree = "<group>"; };
+		A05681E324C7CFD3000297B4 /* Yoga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Yoga.h; sourceTree = "<group>"; };
+		A05681E524C7CFD3000297B4 /* experiments.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = experiments.cpp; sourceTree = "<group>"; };
+		A05681E624C7CFD3000297B4 /* experiments-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "experiments-inl.h"; sourceTree = "<group>"; };
+		A05681E724C7CFD3000297B4 /* experiments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = experiments.h; sourceTree = "<group>"; };
+		A05681E824C7CFD3000297B4 /* YGNodePrint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGNodePrint.cpp; sourceTree = "<group>"; };
+		A05681E924C7CFD3000297B4 /* YGStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGStyle.h; sourceTree = "<group>"; };
+		A05681EA24C7CFD3000297B4 /* YGEnums.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGEnums.cpp; sourceTree = "<group>"; };
+		A05681EB24C7CFD3000297B4 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		A05681EC24C7CFD3000297B4 /* YGValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGValue.cpp; sourceTree = "<group>"; };
+		A05681ED24C7CFD3000297B4 /* BitUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitUtils.h; sourceTree = "<group>"; };
+		A05681EE24C7CFD3000297B4 /* YGConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGConfig.h; sourceTree = "<group>"; };
+		A05681EF24C7CFD3000297B4 /* YGConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGConfig.cpp; sourceTree = "<group>"; };
+		A05681F024C7CFD3000297B4 /* YGNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGNode.cpp; sourceTree = "<group>"; };
+		A05681F124C7CFD3000297B4 /* YGValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGValue.h; sourceTree = "<group>"; };
+		A05681F324C7CFD3000297B4 /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = event.h; sourceTree = "<group>"; };
+		A05681F424C7CFD3000297B4 /* event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = event.cpp; sourceTree = "<group>"; };
+		A05681F624C7CFD3000297B4 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		A05681F824C7CFD3000297B4 /* NodeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeParser.h; sourceTree = "<group>"; };
+		A05681F924C7CFD3000297B4 /* NodeParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NodeParser.cpp; sourceTree = "<group>"; };
+		A05681FA24C7CFD3000297B4 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		A05681FB24C7CFD3000297B4 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		A05681FC24C7CFD3000297B4 /* TextNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextNode.cpp; sourceTree = "<group>"; };
+		A05681FD24C7CFD3000297B4 /* TextNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextNode.h; sourceTree = "<group>"; };
+		A05681FE24C7CFD3000297B4 /* data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data.h; sourceTree = "<group>"; };
+		A05681FF24C7CFD3000297B4 /* enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enums.h; sourceTree = "<group>"; };
+		A056820024C7CFD3000297B4 /* display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = display.h; sourceTree = "<group>"; };
+		A056820124C7CFD3000297B4 /* executable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = executable.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A05681BC24C7CECE000297B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05681CD24C7CEF9000297B4 /* libDDSL-Compiler.a in Frameworks */,
+				A05681CF24C7CEF9000297B4 /* libDDSL-Libs.a in Frameworks */,
+				A05681D124C7CEF9000297B4 /* libDDSL-Runtime.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A05681B624C7CECE000297B4 = {
+			isa = PBXGroup;
+			children = (
+				A05681C124C7CECE000297B4 /* DDSL-Flex */,
+				A05681C024C7CECE000297B4 /* Products */,
+				A05681CB24C7CEF9000297B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A05681C024C7CECE000297B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A05681BF24C7CECE000297B4 /* libDDSL-Flex.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A05681C124C7CECE000297B4 /* DDSL-Flex */ = {
+			isa = PBXGroup;
+			children = (
+				A05681F524C7CFD3000297B4 /* core */,
+				A05681D224C7CFD3000297B4 /* utils */,
+				A05681D424C7CFD3000297B4 /* yoga */,
+				A05681C224C7CECE000297B4 /* DDSL-Flex.h */,
+			);
+			path = "DDSL-Flex";
+			sourceTree = "<group>";
+		};
+		A05681CB24C7CEF9000297B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A05681CC24C7CEF9000297B4 /* libDDSL-Compiler.a */,
+				A05681CE24C7CEF9000297B4 /* libDDSL-Libs.a */,
+				A05681D024C7CEF9000297B4 /* libDDSL-Runtime.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A05681D224C7CFD3000297B4 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A05681D324C7CFD3000297B4 /* flexLog.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		A05681D424C7CFD3000297B4 /* yoga */ = {
+			isa = PBXGroup;
+			children = (
+				A05681D524C7CFD3000297B4 /* YGFloatOptional.h */,
+				A05681D624C7CFD3000297B4 /* Utils.h */,
+				A05681D724C7CFD3000297B4 /* CompactValue.h */,
+				A05681D824C7CFD3000297B4 /* Yoga-internal.h */,
+				A05681D924C7CFD3000297B4 /* YGLayout.h */,
+				A05681DA24C7CFD3000297B4 /* log.cpp */,
+				A05681DB24C7CFD3000297B4 /* Utils.cpp */,
+				A05681DC24C7CFD3000297B4 /* YGNodePrint.h */,
+				A05681DD24C7CFD3000297B4 /* YGEnums.h */,
+				A05681DE24C7CFD3000297B4 /* YGLayout.cpp */,
+				A05681DF24C7CFD3000297B4 /* YGNode.h */,
+				A05681E024C7CFD3000297B4 /* YGMacros.h */,
+				A05681E124C7CFD3000297B4 /* Yoga.cpp */,
+				A05681E224C7CFD3000297B4 /* YGStyle.cpp */,
+				A05681E324C7CFD3000297B4 /* Yoga.h */,
+				A05681E424C7CFD3000297B4 /* internal */,
+				A05681E824C7CFD3000297B4 /* YGNodePrint.cpp */,
+				A05681E924C7CFD3000297B4 /* YGStyle.h */,
+				A05681EA24C7CFD3000297B4 /* YGEnums.cpp */,
+				A05681EB24C7CFD3000297B4 /* log.h */,
+				A05681EC24C7CFD3000297B4 /* YGValue.cpp */,
+				A05681ED24C7CFD3000297B4 /* BitUtils.h */,
+				A05681EE24C7CFD3000297B4 /* YGConfig.h */,
+				A05681EF24C7CFD3000297B4 /* YGConfig.cpp */,
+				A05681F024C7CFD3000297B4 /* YGNode.cpp */,
+				A05681F124C7CFD3000297B4 /* YGValue.h */,
+				A05681F224C7CFD3000297B4 /* event */,
+			);
+			path = yoga;
+			sourceTree = "<group>";
+		};
+		A05681E424C7CFD3000297B4 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				A05681E524C7CFD3000297B4 /* experiments.cpp */,
+				A05681E624C7CFD3000297B4 /* experiments-inl.h */,
+				A05681E724C7CFD3000297B4 /* experiments.h */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		A05681F224C7CFD3000297B4 /* event */ = {
+			isa = PBXGroup;
+			children = (
+				A05681F324C7CFD3000297B4 /* event.h */,
+				A05681F424C7CFD3000297B4 /* event.cpp */,
+			);
+			path = event;
+			sourceTree = "<group>";
+		};
+		A05681F524C7CFD3000297B4 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A05681F624C7CFD3000297B4 /* utils.h */,
+				A05681F724C7CFD3000297B4 /* nodes */,
+				A05681FE24C7CFD3000297B4 /* data.h */,
+				A05681FF24C7CFD3000297B4 /* enums.h */,
+				A056820024C7CFD3000297B4 /* display.h */,
+				A056820124C7CFD3000297B4 /* executable.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		A05681F724C7CFD3000297B4 /* nodes */ = {
+			isa = PBXGroup;
+			children = (
+				A05681F824C7CFD3000297B4 /* NodeParser.h */,
+				A05681F924C7CFD3000297B4 /* NodeParser.cpp */,
+				A05681FA24C7CFD3000297B4 /* Node.cpp */,
+				A05681FB24C7CFD3000297B4 /* Node.h */,
+				A05681FC24C7CFD3000297B4 /* TextNode.cpp */,
+				A05681FD24C7CFD3000297B4 /* TextNode.h */,
+			);
+			path = nodes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A05681BE24C7CECE000297B4 /* DDSL-Flex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A05681C824C7CECE000297B4 /* Build configuration list for PBXNativeTarget "DDSL-Flex" */;
+			buildPhases = (
+				A05681BB24C7CECE000297B4 /* Sources */,
+				A05681BC24C7CECE000297B4 /* Frameworks */,
+				A05681BD24C7CECE000297B4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DDSL-Flex";
+			productName = "DDSL-Flex";
+			productReference = A05681BF24C7CECE000297B4 /* libDDSL-Flex.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A05681B724C7CECE000297B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = youxiaobin;
+				TargetAttributes = {
+					A05681BE24C7CECE000297B4 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A05681BA24C7CECE000297B4 /* Build configuration list for PBXProject "DDSL-Flex" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A05681B624C7CECE000297B4;
+			productRefGroup = A05681C024C7CECE000297B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A05681BE24C7CECE000297B4 /* DDSL-Flex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A05681BB24C7CECE000297B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A056820A24C7CFD3000297B4 /* experiments.cpp in Sources */,
+				A056821224C7CFD3000297B4 /* Node.cpp in Sources */,
+				A056821324C7CFD3000297B4 /* TextNode.cpp in Sources */,
+				A056820E24C7CFD3000297B4 /* YGConfig.cpp in Sources */,
+				A056821124C7CFD3000297B4 /* NodeParser.cpp in Sources */,
+				A056820724C7CFD3000297B4 /* YGLayout.cpp in Sources */,
+				A056820924C7CFD3000297B4 /* YGStyle.cpp in Sources */,
+				A056821024C7CFD3000297B4 /* event.cpp in Sources */,
+				A056820824C7CFD3000297B4 /* Yoga.cpp in Sources */,
+				A056820C24C7CFD3000297B4 /* YGEnums.cpp in Sources */,
+				A056820D24C7CFD3000297B4 /* YGValue.cpp in Sources */,
+				A056820F24C7CFD3000297B4 /* YGNode.cpp in Sources */,
+				A056820B24C7CFD3000297B4 /* YGNodePrint.cpp in Sources */,
+				A056820524C7CFD3000297B4 /* log.cpp in Sources */,
+				A056820624C7CFD3000297B4 /* Utils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A05681C624C7CECE000297B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A05681C724C7CECE000297B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A05681C924C7CECE000297B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A05681CA24C7CECE000297B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A05681BA24C7CECE000297B4 /* Build configuration list for PBXProject "DDSL-Flex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05681C624C7CECE000297B4 /* Debug */,
+				A05681C724C7CECE000297B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A05681C824C7CECE000297B4 /* Build configuration list for PBXNativeTarget "DDSL-Flex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05681C924C7CECE000297B4 /* Debug */,
+				A05681CA24C7CECE000297B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A05681B724C7CECE000297B4 /* Project object */;
+}
