@@ -3,7 +3,43 @@
 ##### Dynamic DSL是一个精简的动态布局模板,基于Antlr实现了一门简单的脚本语言,通过脚本语言的运算可以实现布局描述文件动态化,再结合Flex布局引擎(Yoga)计算出最终的渲染视图树。
 
 ### 最终展示效果:
-###### 这是一个简单的渲染效果图,for测试通过自定义脚本实现了元素的重复,无数展示的数据通过动态绑定生成
+###### 这是一个简单的渲染效果图,for测试通过自定义脚本实现了元素的重复,无数展示的数据通过动态绑定生成,原始的渲染XML如下:
+```
+<?xml version="1.0"?>
+<View flexDirection="row" width="300" height="auto"
+    maxHeight="1000"
+    left="20"
+    top="50"
+    justify="spaceAround"
+    alignItems="stretch"
+    paddingTop="10"
+    paddingBottom="20"
+    paddingLeft="15"
+    paddingRight="15"
+    backgroundColor="#FFCDB2">
+    <View flex="2" height="auto" justify="center" alignItems="center" backgroundColor="#B5838D">
+        <View width="{{ 50 / 2 + 10 }}"
+            height="{{ 59 + 2.5 *2 -3 }}"
+            backgroundColor="#6D6875"
+            borderColor="#e63946"
+            borderWidth="2"
+            shadowColor="#d00000"
+            shadowRadius="15"
+            shadowOpacity="0.5"
+            ></View>
+    </View>
+    <View flex="2" height="200" backgroundColor="#90B36D" justify="start" alignItems="center">
+        <Label text="for测试: {{item[name]}} - {{ item[age] }}" fontSize="20" color="#ffd23f" for="{{ for item in items }}"></Label>
+        <Label text="测试标题2测试标题2测试标题2"
+            fontSize="20"
+            color="#ef233c"
+            marginTop="10"
+            lineNumber="3"
+            backgroundColor="#00ff00"></Label>
+    </View>
+</View>
+
+```
 ![](效果图.jpg)
 
 
