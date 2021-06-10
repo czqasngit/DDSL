@@ -23,6 +23,7 @@
     </View>
     <View flex="2" height="200" backgroundColor="#90B36D" justify="start" alignItems="center">
         <Label text="for测试: {{item[name]}} - {{ item[age] }}" fontSize="20" color="#ffd23f" for="{{ for item in items }}"></Label>
+        <Label text="for测试: {{item[name]}} - {{ item[age] }}" fontSize="20" color="#ffd23f" for="{{ for item in items }}"></Label>
         <Label text="测试标题2测试标题2测试标题2"
             fontSize="20"
             color="#ef233c"
@@ -31,3 +32,4 @@
             backgroundColor="#00ff00"></Label>
     </View>
 </View>
+<Script></Script>

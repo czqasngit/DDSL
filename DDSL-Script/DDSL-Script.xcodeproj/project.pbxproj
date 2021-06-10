@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0526EE7267236C700DFDC06 /* libDDSL-Antlr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0526EE6267236C700DFDC06 /* libDDSL-Antlr.a */; };
 		A056819724C6BCE6000297B4 /* DDExprHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A056819524C6BCE6000297B4 /* DDExprHelper.cpp */; };
 		A056819824C6BD2F000297B4 /* DDExprHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A056819624C6BCE6000297B4 /* DDExprHelper.h */; };
 		A05681A024C6BD5B000297B4 /* ScriptTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = A056819F24C6BD5B000297B4 /* ScriptTests.mm */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A0526EE6267236C700DFDC06 /* libDDSL-Antlr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDDSL-Antlr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A056819524C6BCE6000297B4 /* DDExprHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DDExprHelper.cpp; sourceTree = "<group>"; };
 		A056819624C6BCE6000297B4 /* DDExprHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDExprHelper.h; sourceTree = "<group>"; };
 		A056819D24C6BD5B000297B4 /* ScriptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScriptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,12 +83,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0526EE7267236C700DFDC06 /* libDDSL-Antlr.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0526EE5267236C700DFDC06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0526EE6267236C700DFDC06 /* libDDSL-Antlr.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A056819424C6BCD1000297B4 /* helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +122,7 @@
 				A0DDF97124C690E000DA5FDC /* DDSL-Script */,
 				A056819E24C6BD5B000297B4 /* ScriptTests */,
 				A0DDF97024C690E000DA5FDC /* Products */,
+				A0526EE5267236C700DFDC06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -278,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jd.ScriptTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -295,6 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jd.ScriptTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
